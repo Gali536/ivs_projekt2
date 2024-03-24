@@ -46,10 +46,10 @@
             button16 = new Button();
             button_subtract = new Button();
             plus = new Button();
-            button19 = new Button();
-            button20 = new Button();
-            button21 = new Button();
-            button22 = new Button();
+            button_factorial = new Button();
+            button_power = new Button();
+            button_sqrroot = new Button();
+            button_modulo = new Button();
             button23 = new Button();
             textbox = new TextBox();
             history = new TextBox();
@@ -185,6 +185,7 @@
             button12.TabIndex = 11;
             button12.Text = "+/-";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // button13
             // 
@@ -252,45 +253,49 @@
             plus.UseVisualStyleBackColor = true;
             plus.Click += button18_Click;
             // 
-            // button19
+            // button_factorial
             // 
-            button19.Font = new Font("Segoe UI", 19.8000011F);
-            button19.Location = new Point(12, 361);
-            button19.Name = "button19";
-            button19.Size = new Size(100, 60);
-            button19.TabIndex = 18;
-            button19.Text = "n!";
-            button19.UseVisualStyleBackColor = true;
+            button_factorial.Font = new Font("Segoe UI", 19.8000011F);
+            button_factorial.Location = new Point(12, 361);
+            button_factorial.Name = "button_factorial";
+            button_factorial.Size = new Size(100, 60);
+            button_factorial.TabIndex = 18;
+            button_factorial.Text = "n!";
+            button_factorial.UseVisualStyleBackColor = true;
+            button_factorial.Click += button_factorial_Click;
             // 
-            // button20
+            // button_power
             // 
-            button20.Font = new Font("Segoe UI", 19.8000011F);
-            button20.Location = new Point(12, 427);
-            button20.Name = "button20";
-            button20.Size = new Size(100, 60);
-            button20.TabIndex = 19;
-            button20.Text = "x^y";
-            button20.UseVisualStyleBackColor = true;
+            button_power.Font = new Font("Segoe UI", 19.8000011F);
+            button_power.Location = new Point(12, 427);
+            button_power.Name = "button_power";
+            button_power.Size = new Size(100, 60);
+            button_power.TabIndex = 19;
+            button_power.Text = "x^y";
+            button_power.UseVisualStyleBackColor = true;
+            button_power.Click += button_power_Click;
             // 
-            // button21
+            // button_sqrroot
             // 
-            button21.Font = new Font("Segoe UI", 19.8000011F);
-            button21.Location = new Point(12, 493);
-            button21.Name = "button21";
-            button21.Size = new Size(100, 60);
-            button21.TabIndex = 20;
-            button21.Text = "x√y";
-            button21.UseVisualStyleBackColor = true;
+            button_sqrroot.Font = new Font("Segoe UI", 19.8000011F);
+            button_sqrroot.Location = new Point(12, 493);
+            button_sqrroot.Name = "button_sqrroot";
+            button_sqrroot.Size = new Size(100, 60);
+            button_sqrroot.TabIndex = 20;
+            button_sqrroot.Text = "x√y";
+            button_sqrroot.UseVisualStyleBackColor = true;
+            button_sqrroot.Click += button_sqrroot_Click;
             // 
-            // button22
+            // button_modulo
             // 
-            button22.Font = new Font("Segoe UI", 19.8000011F);
-            button22.Location = new Point(12, 559);
-            button22.Name = "button22";
-            button22.Size = new Size(100, 60);
-            button22.TabIndex = 21;
-            button22.Text = "ln";
-            button22.UseVisualStyleBackColor = true;
+            button_modulo.Font = new Font("Segoe UI", 19.8000011F);
+            button_modulo.Location = new Point(12, 559);
+            button_modulo.Name = "button_modulo";
+            button_modulo.Size = new Size(100, 60);
+            button_modulo.TabIndex = 21;
+            button_modulo.Text = "%";
+            button_modulo.UseVisualStyleBackColor = true;
+            button_modulo.Click += button_modulo_Click;
             // 
             // button23
             // 
@@ -327,14 +332,16 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(550, 631);
             Controls.Add(history);
             Controls.Add(textbox);
             Controls.Add(button23);
-            Controls.Add(button22);
-            Controls.Add(button21);
-            Controls.Add(button20);
-            Controls.Add(button19);
+            Controls.Add(button_modulo);
+            Controls.Add(button_sqrroot);
+            Controls.Add(button_power);
+            Controls.Add(button_factorial);
             Controls.Add(button16);
             Controls.Add(button_subtract);
             Controls.Add(plus);
@@ -379,10 +386,10 @@
         private Button button16;
         private Button button_subtract;
         private Button plus;
-        private Button button19;
-        private Button button20;
-        private Button button21;
-        private Button button22;
+        private Button button_factorial;
+        private Button button_power;
+        private Button button_sqrroot;
+        private Button button_modulo;
         private Button button23;
         private TextBox textbox;
         private TextBox history;

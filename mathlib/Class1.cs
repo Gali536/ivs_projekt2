@@ -44,11 +44,16 @@ namespace mathlib
         }
 
         // Binomický koeficient
-        public static long BinomickyKoeficient(int n, int k)
+        public static double Modulo(double a, double b)
         {
-            if (n < 0 || k < 0 || n < k)
-                throw new ArgumentException("Neplatné hodnoty pro binomický koeficient.");
-            return Faktorial(n) / (Faktorial(k) * Faktorial(n - k));
+            if (b == 0)
+                throw new ArgumentException("Modulo nulou není definováno.");
+            return a % b;
+        }
+
+        public static double ZmenaZnamenka(double cislo)
+        {
+            return -cislo;
         }
     }
 }

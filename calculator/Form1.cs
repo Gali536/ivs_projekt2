@@ -1,4 +1,4 @@
-using mathlib;
+ï»¿using mathlib;
 
 namespace calculator
 {
@@ -6,11 +6,15 @@ namespace calculator
     {
         double a = 0;
         double b = 0;
+        int c = 0;
         double result = 0;
         bool add = false;
         bool subtract = false;
         bool multiply = false;
         bool divide = false;
+        bool power = false;
+        bool sqrroot = false;
+        bool modulo = false;
 
 
         public Form1()
@@ -20,7 +24,7 @@ namespace calculator
 
         private void error()
         {
-            // Konverze selhala, vypíšeme do TextBoxu chybovou hlášku
+            // Konverze selhala, vypÃ­Å¡eme do TextBoxu chybovou hlÃ¡Å¡ku
             textbox.Text = "ERROR";
             history.Text = "";
         }
@@ -83,11 +87,14 @@ namespace calculator
         {
             if (double.TryParse(textbox.Text, out a))
             {
-                // Konverze probìhla úspìšnì, a promìnná 'hodnota' nyní obsahuje pøevedenou hodnotu
+                // Konverze probÄ›hla ÃºspÄ›Å¡nÄ›, a promÄ›nnÃ¡ 'hodnota' nynÃ­ obsahuje pÅ™evedenou hodnotu
+                divide = false;
                 add = true;
                 subtract = false;
                 multiply = false;
-                divide = false;
+                power = false;
+                sqrroot = false;
+                modulo = false;
                 history.Text = Convert.ToString(a) + "+";
                 textbox.Text = "";
             }
@@ -102,10 +109,13 @@ namespace calculator
         {
             if (double.TryParse(textbox.Text, out a))
             {
-                subtract = true;
-                add = false;
-                multiply = false;
                 divide = false;
+                add = false;
+                subtract = true;
+                multiply = false;
+                power = false;
+                sqrroot = false;
+                modulo = false;
                 history.Text = Convert.ToString(a) + "-";
                 textbox.Text = "";
             }
@@ -119,11 +129,14 @@ namespace calculator
         {
             if (double.TryParse(textbox.Text, out a))
             {
-                multiply = true;
+                divide = false;
                 add = false;
                 subtract = false;
-                divide = false;
-                history.Text = Convert.ToString(a) + "×";
+                multiply = true;
+                power = true;
+                sqrroot = false;
+                modulo = false;
+                history.Text = Convert.ToString(a) + "Ã—";
                 textbox.Text = "";
             }
             else
@@ -140,7 +153,89 @@ namespace calculator
                 add = false;
                 subtract = false;
                 multiply = false;
+                power = false;
+                sqrroot = false;
+                modulo = false;
                 history.Text = Convert.ToString(a) + "/";
+                textbox.Text = "";
+            }
+            else
+            {
+                error();
+            }
+        }
+
+        private void button_factorial_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(textbox.Text, out c))
+            {
+                divide = false;
+                add = false;
+                subtract = false;
+                multiply = false;
+                power = false;
+                sqrroot = false;
+                history.Text = Convert.ToString(a) + "!";
+                textbox.Text = Convert.ToString(math.Faktorial(c));
+            }
+            else
+            {
+                error();
+            }
+        }
+
+        private void button_power_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(textbox.Text, out a))
+            {
+                divide = false;
+                add = false;
+                subtract = false;
+                multiply = false;
+                power = true;
+                sqrroot = false;
+                modulo = false;
+                history.Text = Convert.ToString(a) + "^";
+                textbox.Text = "";
+            }
+            else
+            {
+                error();
+            }
+        }
+
+        private void button_sqrroot_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(textbox.Text, out a))
+            {
+                divide = false;
+                add = false;
+                subtract = false;
+                multiply = false;
+                power = false;
+                sqrroot = true;
+                modulo = false;
+                history.Text = Convert.ToString(a) + "âˆš";
+                textbox.Text = "";
+            }
+            else
+            {
+                error();
+            }
+        }
+
+        private void button_modulo_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(textbox.Text, out a))
+            {
+                divide = false;
+                add = false;
+                subtract = false;
+                multiply = false;
+                power = false;
+                sqrroot = false;
+                modulo = true;
+                history.Text = Convert.ToString(a) + "%";
                 textbox.Text = "";
             }
             else
@@ -192,11 +287,37 @@ namespace calculator
                 a = result;
             }
 
+            else if (power == true && int.TryParse(textbox.Text, out c))
+            {
+                history.Text += c + "=";
+
+                result = math.Umocneni(a, c);
+                textbox.Text = Convert.ToString(result);
+                a = result;
+            }
+
+            else if (sqrroot == true && double.TryParse(textbox.Text, out b) && b >= 0)
+            {
+                history.Text += b + "=";
+
+                result = math.Odmocnina(b, a);
+                textbox.Text = Convert.ToString(result);
+                a = result;
+            }
+
+            else if (modulo == true && double.TryParse(textbox.Text, out b) && b != 0)
+            {
+                history.Text += b + "=";
+                result = math.Modulo(a, b);
+                textbox.Text = Convert.ToString(result);
+                a = result;
+            }
+
             else
             {
                 error();
             }
-            
+
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -204,6 +325,12 @@ namespace calculator
             textbox.Text += ",";
         }
 
-        
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(textbox.Text, out a))
+            {
+                textbox.Text = Convert.ToString(math.ZmenaZnamenka(a));
+            }
+        }
     }
 }
