@@ -1,0 +1,11 @@
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\bin\Debug\net8.0\mathlib.deps.json
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\bin\Debug\net8.0\mathlib.dll
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\bin\Debug\net8.0\mathlib.pdb
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\obj\Debug\net8.0\mathlib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\obj\Debug\net8.0\mathlib.AssemblyInfoInputs.cache
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\obj\Debug\net8.0\mathlib.AssemblyInfo.cs
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\obj\Debug\net8.0\mathlib.csproj.CoreCompileInputs.cache
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\obj\Debug\net8.0\mathlib.dll
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\obj\Debug\net8.0\refint\mathlib.dll
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\obj\Debug\net8.0\mathlib.pdb
+C:\Users\jenik\Downloads\ivs_projekt2-master\ivs_projekt2-master\mathlib\obj\Debug\net8.0\ref\mathlib.dll
