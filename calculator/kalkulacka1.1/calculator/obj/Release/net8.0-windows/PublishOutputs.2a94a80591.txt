@@ -1,0 +1,7 @@
+C:\Users\jenik\Downloads\kalkulacka.installer\calculator.exe
+C:\Users\jenik\Downloads\kalkulacka.installer\calculator.dll
+C:\Users\jenik\Downloads\kalkulacka.installer\calculator.deps.json
+C:\Users\jenik\Downloads\kalkulacka.installer\calculator.runtimeconfig.json
+C:\Users\jenik\Downloads\kalkulacka.installer\calculator.pdb
+C:\Users\jenik\Downloads\kalkulacka.installer\mathlib.dll
+C:\Users\jenik\Downloads\kalkulacka.installer\mathlib.pdb

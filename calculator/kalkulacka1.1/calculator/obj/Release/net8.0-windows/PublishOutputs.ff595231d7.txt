@@ -1,0 +1,7 @@
+C:\Users\jenik\Desktop\ivs_projekt2-master\ivs_projekt2-master\calculator\bin\Release\net8.0-windows\publish\calculator.exe
+C:\Users\jenik\Desktop\ivs_projekt2-master\ivs_projekt2-master\calculator\bin\Release\net8.0-windows\publish\calculator.dll
+C:\Users\jenik\Desktop\ivs_projekt2-master\ivs_projekt2-master\calculator\bin\Release\net8.0-windows\publish\calculator.deps.json
+C:\Users\jenik\Desktop\ivs_projekt2-master\ivs_projekt2-master\calculator\bin\Release\net8.0-windows\publish\calculator.runtimeconfig.json
+C:\Users\jenik\Desktop\ivs_projekt2-master\ivs_projekt2-master\calculator\bin\Release\net8.0-windows\publish\calculator.pdb
+C:\Users\jenik\Desktop\ivs_projekt2-master\ivs_projekt2-master\calculator\bin\Release\net8.0-windows\publish\mathlib.dll
+C:\Users\jenik\Desktop\ivs_projekt2-master\ivs_projekt2-master\calculator\bin\Release\net8.0-windows\publish\mathlib.pdb

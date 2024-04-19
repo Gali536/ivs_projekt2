@@ -1,0 +1,7 @@
+C:\Users\jenik\Downloads\calculator.exe
+C:\Users\jenik\Downloads\calculator.dll
+C:\Users\jenik\Downloads\calculator.deps.json
+C:\Users\jenik\Downloads\calculator.runtimeconfig.json
+C:\Users\jenik\Downloads\calculator.pdb
+C:\Users\jenik\Downloads\mathlib.dll
+C:\Users\jenik\Downloads\mathlib.pdb
