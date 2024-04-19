@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "calculator/1.0.0": {
+        "dependencies": {
+          "mathlib": "1.0.0"
+        },
+        "runtime": {
+          "calculator.dll": {}
+        }
+      },
+      "mathlib/1.0.0": {
+        "runtime": {
+          "mathlib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "calculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "mathlib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
